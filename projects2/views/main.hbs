@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/01ab4199c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    {{>header}}
+
+    <main>
+        <br>
+        {{>decodiv}}
+        {{>about}}
+
+        {{>services}}
+
+        <section style="margin-top: 80px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55301.65266472219!2d76.84070194367094!3d29.9692752398511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e46cf85c85d3d%3A0x7f06e815caca33f4!2sKurukshetra%2C%20Haryana!5e0!3m2!1sen!2sin!4v1723520018448!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <div class="forms" id="forms">
+            <p style="font-size:2.5em; color:rgb(237, 93, 10)">Contact Us</p>
+            <p style="margin-bottom: 40px;">we will be happy for you</p>
+            <form action="/" method="post">
+                <div class="form_div">
+                    <p style="font-size: 1.3em;">Name</p>
+                    <input name="name" type="text" placeholder="Full Name">
+                </div >
+                <div class="form_div">
+                    <p style="font-size: 1.3em;">Email Address</p>
+                    <input name="email" type="email" placeholder="Enter your email">
+                    <p style="font-size: 0.7em;">We will never share your email with anyone else.</p>
+                </div>
+                <div class="form_div">
+                    <p style="font-size: 1.3em;">Phone</p>
+                    <input name="phone" type="Number" placeholder="Phone Number">
+                </div>
+                <div class="form_div">
+                    <p style="font-size: 1.3em;">Message</p>
+                    <input name="message" type="text" placeholder="Message">
+                </div>
+                <input type="submit" value="Submit" class="decobutton">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Created with ❤️ by me</p>
+    </footer>
+</body>
+</html>
